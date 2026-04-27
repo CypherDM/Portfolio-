@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+    font-family: "Cinzel", sans-serif;
+}
+
+:root {
+    --gold: #C1863F;
+    --gold-light: #d4a056;
+    --gold-faint: #c1863f18;
+    --gray: #555;
+}
+
+body {
+    background: radial-gradient(ellipse at 0% 80%, #b8d4e854 0%, #d6e8f06c 25%, #f0f4f7 50%, #ffffff 75%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 200px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline #C1863F;
+    text-underline-offset: 3px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #c1863f67;
+}
+
+main {
+    padding: 0 200px;
+}
+
+main h1 {
+    font-size: 70px;
+}
+
+main h1 strong{
+    color: #C1863F;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+main .card .card-logo {
+    border: 1px solid #000;
+}
+
+main .card  .card-logo img {
+    width: auto;
+    height: 30px;
+}
+
+.cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #c1863f35;
+            border-radius: 12px;
+            padding: 24px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: rgba(255,255,255,0.5);
+            backdrop-filter: blur(4px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px #c1863f18;
+            border-color: var(--gold);
+        }
+
+        .card-icone {
+            width: 48px;
+            height: 48px;
+            background: var(--gold-faint);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .card-externo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: var(--gold);
+            text-decoration: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover .card-externo {
+            opacity: 1;
+        }
+
+        .card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: var(--gray);
+            line-height: 22px;
+            flex: 1;
+        }
+
+        .card-link {
+            font-family: 'Cinzel', serif;
+            font-size: 12px;
+            color: var(--gold);
+            letter-spacing: 1px;
+            transition: letter-spacing 0.3s;
+        }
+
+        .card:hover .card-link {
+            letter-spacing: 2px;
+        }
+
+footer {
+    margin-top: auto;
+    padding: 30px 0;
+}
+
+footer #links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer #links .container-links a img {
+    width: auto;
+    height: 30px;
+    filter: invert(58%) sepia(60%) saturate(500%) hue-rotate(5deg) brightness(90%);
+
+    transition: transform 0.3s ease;
+}
+
+footer #links .container-links a img:hover {
+    transform: translateY(-2px);
+}

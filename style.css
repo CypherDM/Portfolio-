@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+    font-family: "Cinzel", sans-serif;
+}
+
+body {
+    background: radial-gradient(ellipse at 0% 80%, #b8d4e854 0%, #d6e8f06c 25%, #f0f4f7 50%, #ffffff 75%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 200px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline #C1863F;
+    text-underline-offset: 3px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #c1863f67;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 60vh;
+    align-items: center;
+    padding: 0 200px;
+    gap: 40px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+main .informacoes h1 {
+    font-size: 70px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+main .informacoes h1 strong {
+    color: #C1863F;
+}
+
+main .informacoes p {
+    font-size: 18px;
+    width: 70%;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+main .secoes {
+    display: flex;   
+    gap: 40px;
+}
+
+main .secoes .botao a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+main .secoes .botao img{
+    width: auto;
+    height: 20px;
+}
+
+main .secoes .botao img:hover {
+    filter: invert(58%) sepia(60%) saturate(500%) hue-rotate(5deg) brightness(90%);
+}
+
+main .secoes .botao{
+    border: 1px solid #C1863F;
+
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+main .secoes .botao:hover {
+    transform: translateY(-2px);
+}
+
+main .secoes .botao a:hover{
+    color: #C1863F;
+}
+
+main .imagem-perfil {
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .imagem-perfil img {
+    width: auto;
+    height: 500px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 30px 0;
+}
+
+footer #links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer #links .container-links a img {
+    width: auto;
+    height: 30px;
+    filter: invert(58%) sepia(60%) saturate(500%) hue-rotate(5deg) brightness(90%);
+
+    transition: transform 0.3s ease;
+}
+
+footer #links .container-links a img:hover {
+    transform: translateY(-2px);
+}
